@@ -1,0 +1,460 @@
+/* GooGle FOnt */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* animations */
+@keyframes colorshift {
+    from{
+        background-color: #DD0000;
+    }
+    to{
+        background-color: #dfa233;
+    }
+}
+
+
+body{
+   margin: 0 auto;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------------
+header
+------------------ */
+.header{
+    
+    height: 646px;
+    margin: 0 auto;
+    width: 60vw;
+    padding-left: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: 
+    #161616;
+}
+.information{
+    width: 531px;
+    height: 424px;
+    left: 246px;
+    top: 161px;
+   
+}
+
+.title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color: #FFFFFF;
+} 
+
+.info{
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.live-btn{
+    background: #DD0000;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 16px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    outline: none;
+
+} 
+
+.live-btn:hover{
+    animation: colorshift 1s ease-in-out .5s infinite alternate;
+    transform: scale(1.1);
+}
+
+.header img{
+    height: 100%;
+    
+}
+
+/* --------
+header end
+--------- */
+
+/* ---------------side bar */
+.container{
+    margin: 0 auto;
+    width: 65vw;
+    margin-top: 130px;
+    display: flex;
+}
+
+
+.side-bar{
+    padding: 0 30px;
+    margin-left: 0;
+    margin-right: 24px;
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.log-btn{
+    width: 252px;
+    height: 64px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(163, 179, 196);
+}
+
+.log-btn a{
+    text-decoration: none;
+    color: #161616
+}
+
+.log-btn:hover, .log-btn a:hover{
+    animation: colorshift 1s ease-in-out .5s infinite alternate;
+    color: #FFFFFF;
+    transition: 1s;
+    border: none;
+}
+
+/* ----------
+aside end
+*/
+/* ---------------card */
+
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-bottom: 50px;
+}
+.match{
+    width: 312px;
+    height: 242px;
+    padding: 53px 30px ;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(223, 229, 231);
+    border-radius: 5px;
+}
+.flex-flags{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+.special-btn{
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 50px;
+}
+
+
+
+/* footer */
+
+
+footer{
+    width: 100%;
+    
+    background-color: #161616;
+    text-align: center;
+}
+
+
+
+.f-title{
+    padding-top: 70px;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+footer hr{
+    margin-bottom: 40px;
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: aqua;
+
+}
+
+.f-container{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    justify-content: center;
+    
+}
+.f-container p{
+    color: #B9B9B9;
+    margin: 0;
+    padding: 0 30px;
+   
+}
+.social{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    
+    font-size: 25px;
+    color: aliceblue;
+    margin: 20px;
+}
+
+
+
+
+
+
+/* --------------------------------------------------
+responsive 
+------------------*/
+/* MOBILE  */
+@media only screen and (max-width: 700px) {
+    /* header */
+    .header{
+        margin: 5% auto;
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 0 ;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+   
+    }
+    .information{
+        width: 258px;
+        height: auto;
+        left: 59px;
+        top: 72px;
+        
+       
+    }
+    .title{
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        padding-top: 28px;
+    } 
+    .info{
+        width: 258px;
+        height: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        white-space: wrap;
+        text-overflow: ellipsis;
+    }
+    .live-btn{
+       
+        border-radius: 8px;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        padding: 10px 20px;   
+    
+    } 
+    .header img{
+        margin-top: 21px;
+        height: 100%;
+        width: 233px;
+        
+    }
+    /* end pf header */
+    /* ------------------------- */
+    
+    /*sidebar  */
+
+    .container{
+        margin-top: 33px;
+        flex-direction: column;
+        
+    }
+    .side-bar{
+       
+        width: 210px;
+        height: 176px;
+        background-color: #FFFFFF;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+    .log-btn{
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+         font-weight: 500;
+        
+    }
+/* sidebar end */
+.matches{
+    margin: 77px 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+/* footer */
+footer{
+    height: auto;
+}
+.f-title{
+    padding-top: 23px;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.f-container { 
+  flex-direction: column;
+   align-items: center;
+   height: 300px;
+   
+}
+.f-container p{
+    font-size: 14px;
+line-height: 50px;
+   
+}
+
+}
+
+
+/* --------------------
+Tab-Part
+---------------- */
+@media only screen and (min-width:701px) and (max-width:1000px) {
+    /* header */
+    .header{
+    
+        height:  398px;
+        margin: 0 auto;
+        width: 90%;
+        padding-left: 60px;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    .information{
+        margin-left: 60px;
+        margin-top: 70px;
+        margin-bottom: 10px;
+        width: 531px;
+        height: 424px;
+       
+    }
+    .title{
+        
+        font-size: 40px;
+        line-height: 50px;
+        width: 289px;
+        height: 150px;
+        
+    }
+    .info{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        width: 301px;
+        height: auto;
+    }
+
+    .header img{
+        margin-top: 55px;
+        margin-right: 20px;
+         width: 323px;
+        height: 340px;
+    }
+    /* header end */
+
+    /* ------side bar */
+
+    
+    .container{
+        margin-top: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .side-bar{
+        background-color: #FFFFFF;
+        flex-direction: row;
+        width: 90%;
+    }
+    .log-btn{
+        width: 230px;
+height: 64px;
+    }
+/* side bar end */
+
+/* cards */
+.matches{
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    
+}
+    .match{
+        width: 357px;
+        height: 414.21px;
+    }
+    .special-btn{
+        width: 90%;
+        display: block;
+    }
+
+
+
+    /*footer  */
+    
+    footer{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .f-container{
+         height: auto;
+         flex-wrap: wrap;
+        
+         
+     }
+     .f-container p{
+        color: #FFFFFF;
+        margin: 0;
+        padding: 20px;
+       
+    }
+    .social{
+        width: 95%;
+    }
+    
+
+
+}
